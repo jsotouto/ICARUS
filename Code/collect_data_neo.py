@@ -54,7 +54,7 @@ class CollectTrainingData(object):
     def __init__(self):
         # socket for getting image
         self.server_socket = socket.socket()
-        self.server_socket.bind(('192.168.0.10', 9190))
+        self.server_socket.bind(('192.168.1.19', 9190)) #PC IP
         self.server_socket.listen(0)
         print('Ready to connect')
         # accept connection
@@ -62,7 +62,7 @@ class CollectTrainingData(object):
 
         # socket for controlling car
         self.client_socket = socket.socket()
-        self.client_socket.connect(('192.168.0.5', 9200))
+        self.client_socket.connect(('192.168.1.7', 9200)) #PI IP
         print('Connected')
         
         # create labels
@@ -104,7 +104,7 @@ class CollectTrainingData(object):
                 # cv2.imwrite('training_images/frame{:>05}.jpg'.format(frame), image)
 
                 # cv2.imshow('roi_image', roi)
-#                cv2.imshow('image', image)
+                cv2.imshow('image', image)
 
                 # reshape the roi image into one row array
                 temp_array = roi.reshape(1, 120, 320).astype(np.float32)
