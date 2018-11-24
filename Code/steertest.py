@@ -3,7 +3,7 @@ import socket
 import time
 import os
 import numpy as np
-import keyboard
+
 
 ## Declaration of Getch ##
 
@@ -92,7 +92,7 @@ class CollectTrainingData(object):
                 elif keyin == 's':
                     print('Backward')
                     
-                elif keyin == 'f':
+                elif keyin == 'd':
                     print('Right')
                 
                 elif keyin == 'q':
