@@ -1,0 +1,3 @@
+https://cloud.google.com/vision/docs/libraries#client-libraries-usage-python
+
+https://cloud.google.com/vision/docs/quickstart?apix_params=%7B%22resource%22%3A%7B%22requests%22%3A%5B%7B%22features%22%3A%5B%7B%22type%22%3A%22LABEL_DETECTION%22%7D%5D%2C%22image%22%3A%7B%22source%22%3A%7B%22imageUri%22%3A%22gs%3A%2F%2Fpika-chu%2Fdemo-image.jpg%22%7D%7D%7D%5D%7D%7D
