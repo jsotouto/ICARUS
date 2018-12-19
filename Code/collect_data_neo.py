@@ -62,11 +62,8 @@ class CollectTrainingData(object):
 
         # socket for controlling car
         self.client_socket = socket.socket()
-<<<<<<< HEAD
         self.client_socket.connect(('192.168.0.7', 9200))
-=======
         self.client_socket.connect(('192.168.1.7', 9200)) #PI IP
->>>>>>> a3c2d441cdf5213252558d13d307e721b2521c75
         print('Connected')
         
         # create labels
